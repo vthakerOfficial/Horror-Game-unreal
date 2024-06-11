@@ -55,7 +55,7 @@ AHorrorGameCharacter::AHorrorGameCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	flashLight = CreateDefaultSubobject<USpotLightComponent>(TEXT("Flashlight"));
-	flashLight->SetupAttachment(FollowCamera, USpringArmComponent::SocketName);
+	flashLight->SetupAttachment(FollowCamera, USpringArmComponent::SocketName);		
 
 
 	
@@ -70,6 +70,7 @@ void AHorrorGameCharacter::BeginPlay()
 
 	// settings its key
 	Tags.AddUnique(FName("Player"));
+
 }
 
 //////////////////////////////////////////////////////////////////////////
