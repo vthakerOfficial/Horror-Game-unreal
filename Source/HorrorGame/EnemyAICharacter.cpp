@@ -5,6 +5,7 @@
 #include "EnemyAIController.h"
 #include <Perception/PawnSensingComponent.h>
 #include "BehaviorTree/BlackboardComponent.h"
+//#include "TimerManager.h"
 
 
 // Sets default values
@@ -52,7 +53,8 @@ void AEnemyAICharacter::resumeWanderingCallbackFunc()
 	UE_LOG(LogTemp, Display, TEXT("CallbackFunc has been called"));
 	if (AEnemyAIController* AIController = Cast<AEnemyAIController>(GetController())) {
 		UE_LOG(LogTemp, Display, TEXT("Found AIController, clearing value"));
-		AIController->GetBlackboardComponent()->ClearValue(TEXT("playerLocation"));
+		AIController->GetBlackboardComponent()->ClearValue(TEXT("targetPlayer"));
+		AIController->GetBlackboardComponent()->ClearValue(TEXT("targetPlayerLocation"));
 	}
 }
 

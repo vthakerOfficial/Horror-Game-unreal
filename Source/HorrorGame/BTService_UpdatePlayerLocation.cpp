@@ -3,6 +3,7 @@
 
 #include "BTService_UpdatePlayerLocation.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "AI/NavigationSystemBase.h"
 
 UBTService_UpdatePlayerLocation::UBTService_UpdatePlayerLocation()
 {
@@ -14,6 +15,8 @@ void UBTService_UpdatePlayerLocation::TickNode(UBehaviorTreeComponent& OwnerComp
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 	auto blackBoardComp = OwnerComp.GetBlackboardComponent();
 	if (APawn* targetPlayer = Cast<APawn>(blackBoardComp->GetValueAsObject(TEXT("targetPlayer")))) {
+		//FVector queryExtent = FVector(50.0f, 50.0f, 50.0f);
+		//FNavLocation navLoc;
 		blackBoardComp->SetValueAsVector(TEXT("targetPlayerLocation"), targetPlayer->GetActorLocation());
 	}
 }
