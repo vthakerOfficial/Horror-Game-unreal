@@ -19,6 +19,28 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 //////////////////////////////////////////////////////////////////////////
 // AHorrorGameCharacter
 
+float AHorrorGameCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	float damageTaken = DamageAmount > health ? 0 : DamageAmount;
+	health -= damageTaken;
+	if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("Player Health is %f"), health));
+	return damageTaken;
+}
+
+
+
+
+bool AHorrorGameCharacter::isSafe() const
+{
+	return bIsSafe;
+}
+
+void AHorrorGameCharacter::setIsSafe(bool bNewIsSafe)
+{
+	bIsSafe = bNewIsSafe;
+}
+
 AHorrorGameCharacter::AHorrorGameCharacter()
 {
 	// Set size for collision capsule
@@ -70,6 +92,9 @@ void AHorrorGameCharacter::BeginPlay()
 
 	// settings its key
 	Tags.AddUnique(FName("Player"));
+
+	// settings its Team (so AI knows to attack this)
+	//FGenericTeamId
 
 }
 
@@ -150,8 +175,6 @@ void AHorrorGameCharacter::Look(const FInputActionValue& Value)
 
 void AHorrorGameCharacter::toggleFlashLight(const FInputActionValue& ignoredValue)
 {
-	//UE_LOG(LogTemp, Display, TEXT("Called func"));
-	//UE_LOG(LogTemp, Display, TEXT("is visible? %d"), flashLight->IsVisible());
 	bool bNewVisibility = !flashLight->IsVisible();
 	flashLight->SetVisibility(bNewVisibility);
 }

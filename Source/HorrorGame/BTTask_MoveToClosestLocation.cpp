@@ -16,19 +16,32 @@ UBTTask_MoveToClosestLocation::UBTTask_MoveToClosestLocation()
 EBTNodeResult::Type UBTTask_MoveToClosestLocation::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	EBTNodeResult::Type result = Super::ExecuteTask(OwnerComp, NodeMemory);
+	return result;
+	/*
 	if (result != EBTNodeResult::Failed) {
-		return result;
 	}
-	
+	if (GEngine) {
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("Invalid position getting as close as possible")));
+	}
+
 	// at an inaccessilbe point so we will get as close as possible to pawn
 	if (APawn* controlledPawn = Cast<APawn>(OwnerComp.GetAIOwner()->GetPawn())) {
+		if (GEngine) {
+			GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("A")));
+		}
 		FVector targetLocation = OwnerComp.GetBlackboardComponent()->GetValueAsVector(GetSelectedBlackboardKey());
 		FVector newTargetLocation = getClosestNavigablePoint(targetLocation);
 		OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), newTargetLocation);
 		result = Super::ExecuteTask(OwnerComp, NodeMemory);
 		if (result != EBTNodeResult::Failed) {
+			if (GEngine) {
+				GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("B")));
+			}
 			// player 
 			if (APawn* targetPawn = Cast<APawn>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TEXT("targetPlayer")))) {
+				if (GEngine) {
+					GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("c")));
+				}
 				AController* targetPawnController = targetPawn->GetController();
 				FRotator targetPawnRotation = targetPawnController->GetControlRotation();
 
@@ -50,15 +63,8 @@ EBTNodeResult::Type UBTTask_MoveToClosestLocation::ExecuteTask(UBehaviorTreeComp
 
 				UE_LOG(LogTemp, Display, TEXT("new yaw is: %f"), relativeVector.Rotation().Yaw);
 			}
-			else {
-				UE_LOG(LogTemp, Display, TEXT("D"));
-			}
-
 		}
-		else {
-			UE_LOG(LogTemp, Display, TEXT("O"));
-		}
-		/*
+		
 		//UE_LOG(LogTemp, Display, TEXT("Inaccessible target Location, getting as close as possible to targetPawn"));
 		//UNavigationSystemV1* navSystem = FNavigationSystem::GetCurrent<UNavigationSystemV1>(GetWorld());
 
@@ -97,12 +103,10 @@ EBTNodeResult::Type UBTTask_MoveToClosestLocation::ExecuteTask(UBehaviorTreeComp
 		//	controlledPawn->GetController()->SetControlRotation(AIRotation);
 		//}
 		//return result;
-		*/
-	}
-	else {
-		UE_LOG(LogTemp, Display, TEXT("R"));
+		
 	}
 	return result;
+	*/
 	//UE_LOG(LogTemp, Display, TEXT("Failed!!!!!!!!!!!!!!!!!!!!!!!!!!!!"));
 	//MoveToLocation(OwnerComp, NavLoc.Location);
 }

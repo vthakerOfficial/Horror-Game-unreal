@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "Misc/OutputDeviceNull.h"
+#include "GenericTeamAgentInterface.h"
 #include "HorrorGameCharacter.generated.h"
 
 class USpringArmComponent;
@@ -18,10 +19,22 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class AHorrorGameCharacter : public ACharacter
+class AHorrorGameCharacter : public ACharacter, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
+public:
+	virtual float TakeDamage(
+		float DamageAmount,
+		struct FDamageEvent const& DamageEvent,
+		AController* EventInstigator,
+		AActor* DamageCauser
+	) override;
 
+	UFUNCTION(BlueprintPure, Category = "Combat")
+	bool isSafe() const;
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void setIsSafe(bool isSafe);
+private:
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
@@ -55,11 +68,33 @@ class AHorrorGameCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* interactAction;
 
+
+
+
 public:
 	AHorrorGameCharacter();
 	
+	// AI Perception Related
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI") 
+	int32 ID = 0;
+
+	virtual FGenericTeamId GetGenericTeamId() const override {
+		return teamId;
+	}
 
 protected:
+	// taking/applying damage stuff
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UDamageType> damageType;
+	UPROPERTY(EditAnywhere)
+	float damageAmount = 10.0f;
+	UPROPERTY(EditAnywhere)
+	float health = 100.0f;
+
+
+	FGenericTeamId teamId;
+
+	// User Input funcs
 
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -82,6 +117,10 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+
+private:
+	bool bIsSafe = false;
 
 };
 
