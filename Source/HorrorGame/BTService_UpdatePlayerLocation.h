@@ -16,5 +16,9 @@ class HORRORGAME_API UBTService_UpdatePlayerLocation : public UBTService_Blackbo
 public:
 	UBTService_UpdatePlayerLocation();
 protected:
+	virtual void OnBecomeRelevant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+	
+	virtual void OnCeaseRelevant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory);
+
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 };

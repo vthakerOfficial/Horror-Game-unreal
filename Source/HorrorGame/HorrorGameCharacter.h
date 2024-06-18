@@ -7,6 +7,7 @@
 #include "Logging/LogMacros.h"
 #include "Misc/OutputDeviceNull.h"
 #include "GenericTeamAgentInterface.h"
+
 #include "HorrorGameCharacter.generated.h"
 
 class USpringArmComponent;
@@ -15,6 +16,7 @@ class UInputMappingContext;
 class UInputAction;
 class USpotLightComponent;
 struct FInputActionValue;
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
@@ -68,9 +70,6 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* interactAction;
 
-
-
-
 public:
 	AHorrorGameCharacter();
 	
@@ -118,6 +117,8 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Fear")
+	void shakeCamera(float duration);
 
 private:
 	bool bIsSafe = false;

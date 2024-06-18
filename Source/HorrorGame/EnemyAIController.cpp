@@ -6,6 +6,7 @@
 #include <Perception/AISenseConfig_Sight.h>
 #include "Perception/AIPerceptionComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "HorrorGameCharacter.h"
 
 
 
@@ -18,6 +19,15 @@ AEnemyAIController::AEnemyAIController()
 {
 	setupPerceptionSystem();
 	//GetPerceptionComponent
+}
+
+float AEnemyAIController::getPerceptionMaxAge() const
+{
+	if (UAISenseConfig_Sight* sightConfig = Cast<UAISenseConfig_Sight>(
+		perception->GetSenseConfig(UAISense::GetSenseID<UAISense_Sight>()))) {
+		return sightConfig->GetMaxAge();
+	}
+	return -1;
 }
 
 void AEnemyAIController::BeginPlay()
@@ -42,6 +52,9 @@ void AEnemyAIController::onActorDetected(AActor* detectedActor, FAIStimulus stim
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT("AI Has Seen Player"));
 	}
 	GetBlackboardComponent()->SetValueAsObject(TEXT("targetPlayer"), detectedActor);
+	if (AHorrorGameCharacter* player = Cast<AHorrorGameCharacter>(GetBlackboardComponent()->GetValueAsObject(TEXT("targetPlayer")))) {
+		player->shakeCamera(60*60);
+	}
 }
 
 void AEnemyAIController::onActorForgotten(AActor* forgottenActor)
@@ -49,13 +62,6 @@ void AEnemyAIController::onActorForgotten(AActor* forgottenActor)
 	ETeamAttitude::Type attitude = GetTeamAttitudeTowards(*forgottenActor);
 	if (attitude != ETeamAttitude::Hostile) return;
 	resumeWanderingCallbackFunc();
-	/*GetWorldTimerManager().SetTimer(
-		resumeWanderingTimerHandle,
-		this,
-		&AEnemyAIController::resumeWanderingCallbackFunc,
-		perception->GetComponentTickInterval() + resumeWanderingDelay,
-		false
-	);*/
 }
 
 
@@ -63,7 +69,9 @@ void AEnemyAIController::resumeWanderingCallbackFunc() {
 	if (GEngine) {
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT("AI is returning to Wandering"));
 	}
-
+	if (AHorrorGameCharacter* player = Cast<AHorrorGameCharacter>(GetBlackboardComponent()->GetValueAsObject(TEXT("targetPlayer")))) {
+		player->shakeCamera(-1);
+	}
 	GetBlackboardComponent()->ClearValue(TEXT("targetPlayer"));
 	GetBlackboardComponent()->ClearValue(TEXT("targetPlayerLocation"));
 }

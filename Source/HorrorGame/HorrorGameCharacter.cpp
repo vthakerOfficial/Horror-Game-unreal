@@ -13,6 +13,7 @@
 #include <Components/SpotLightComponent.h>
 #include "Misc/OutputDeviceNull.h"
 #include "InteractableInterface.h"
+#include "Kismet/GameplayStatics.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -92,11 +93,31 @@ void AHorrorGameCharacter::BeginPlay()
 
 	// settings its key
 	Tags.AddUnique(FName("Player"));
+	//cameraShakeClass = 
 
 	// settings its Team (so AI knows to attack this)
 	//FGenericTeamId
 
 }
+
+
+void AHorrorGameCharacter::shakeCamera_Implementation(float duration)
+{
+	//empty
+}
+
+//bool AHorrorGameCharacter::myShakeCamera(float duration)
+//{
+//	return false;
+//}
+
+
+
+
+
+
+
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
