@@ -22,6 +22,12 @@ class HORRORGAME_API IInteractableInterface
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	
-	virtual void interact(AActor* actor);
+	UFUNCTION(BlueprintNativeEvent, Category = "Interface")
+	void interact(AActor* actor);
+
+	void interact_Implementation(AActor* other) {
+		//return false;
+	}
+
+
 };

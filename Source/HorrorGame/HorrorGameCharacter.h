@@ -120,8 +120,13 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Fear")
 	void shakeCamera(float duration);
 
+	UFUNCTION(BlueprintCallable)
+	bool takeKey(int32 keyID);
+
 private:
 	bool bIsSafe = false;
+
+	TArray<int32> doorKeys;
 
 };
 

@@ -25,8 +25,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-	UFUNCTION(BlueprintImplementableEvent, Category = "Interface")
-	void interact(AActor* actor) override;
+	//UFUNCTION(BlueprintNativeEvent, Category = "Interface")
+	//bool interact_Implementation(AActor* actor) override;
 	//FString MyNativeFunction_Implementation() override;
 
 };

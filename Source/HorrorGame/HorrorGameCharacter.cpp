@@ -14,6 +14,7 @@
 #include "Misc/OutputDeviceNull.h"
 #include "InteractableInterface.h"
 #include "Kismet/GameplayStatics.h"
+#include <AIController.h>
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -98,6 +99,17 @@ void AHorrorGameCharacter::BeginPlay()
 	// settings its Team (so AI knows to attack this)
 	//FGenericTeamId
 
+}
+
+bool AHorrorGameCharacter::takeKey(int32 keyID)
+{
+	if (keyID == -1) return true; // -1 = door is alr open. Doing it here cuz blueprint slow and I don't want to complicate things there.
+	if (doorKeys.Contains(keyID)) {
+		doorKeys.Remove(keyID);
+		//keyIDs.RemoveAll(keyID);
+		return true;
+	}
+	return false;
 }
 
 
@@ -202,7 +214,6 @@ void AHorrorGameCharacter::toggleFlashLight(const FInputActionValue& ignoredValu
 
 void AHorrorGameCharacter::interact(const FInputActionValue& ignoredValue)
 {
-
 	// only closet rn but will just interact with any subclass of InteractableInterface
 	TArray<AActor*> overlappingActors;
 
@@ -212,8 +223,24 @@ void AHorrorGameCharacter::interact(const FInputActionValue& ignoredValue)
 
 
 	for (AActor* overlappingActor : overlappingActors) {
-		if (IInteractableInterface* interactableActor = Cast<IInteractableInterface>(overlappingActor)) {
-			interactableActor->interact(this);
+		IInteractableInterface* interactableActor = Cast<IInteractableInterface>(overlappingActor);
+		if (!interactableActor) continue;
+		//if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("sucessfully interacted")));
+		//if (!GetController()->LineOfSightTo(overlappingActor)) continue;
+
+		FHitResult hitResult;
+		FVector startLoc = GetActorLocation();
+		FVector endLoc = startLoc + GetControlRotation().Vector() * 5000.0f;
+		FCollisionQueryParams params;
+		params.AddIgnoredActor(GetController()->GetPawn());
+		bool bHit = GetWorld()->LineTraceSingleByChannel(hitResult, startLoc, endLoc, ECC_Visibility, params);
+		if (!bHit) return;
+
+		
+		if (IInteractableInterface* hitInteractableActor = Cast<IInteractableInterface>(hitResult.GetActor())) {
+			IInteractableInterface::Execute_interact(overlappingActor, this);
 		}
+
+		
 	}
 }
