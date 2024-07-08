@@ -7,6 +7,7 @@
 #include "Logging/LogMacros.h"
 #include "Misc/OutputDeviceNull.h"
 #include "GenericTeamAgentInterface.h"
+#include "StructItemInfo.h"
 
 #include "HorrorGameCharacter.generated.h"
 
@@ -70,6 +71,9 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* interactAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* pickUpAction;
+
 public:
 	AHorrorGameCharacter();
 	
@@ -104,6 +108,8 @@ protected:
 	void toggleFlashLight(const FInputActionValue& value);
 			
 	void interact(const FInputActionValue& value);
+
+	void pickUp(const FInputActionValue& value);
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -117,6 +123,8 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "Inventory")
+	void addItemToInventoryHelper(FStructItemInfo itemInfo);
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Fear")
 	void shakeCamera(float duration);
 
@@ -127,6 +135,7 @@ private:
 	bool bIsSafe = false;
 
 	TArray<int32> doorKeys;
+
 
 };
 

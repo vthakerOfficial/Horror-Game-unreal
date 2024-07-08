@@ -167,7 +167,7 @@ bool AEnemyAICharacter::doSphereTrace(TArray<FHitResult>& outHits)
 	// SPHERE Trace
 
 	FVector start = GetActorLocation();
-	FVector end = GetActorLocation() + GetActorRotation().Vector() * attackOffset;
+	FVector end = GetActorLocation() +	GetActorRotation().Vector() * attackOffset;
 	TArray<TEnumAsByte<EObjectTypeQuery>> objectTypesArray;
 	objectTypesArray.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
 

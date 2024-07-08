@@ -14,6 +14,7 @@
 #include "Misc/OutputDeviceNull.h"
 #include "InteractableInterface.h"
 #include "Kismet/GameplayStatics.h"
+#include "ItemInterface.h"
 #include <AIController.h>
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -163,6 +164,12 @@ void AHorrorGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		// Interact
 		EnhancedInputComponent->BindAction(interactAction, ETriggerEvent::Started, this, &AHorrorGameCharacter::interact);
+		
+		// grab an item
+		EnhancedInputComponent->BindAction(pickUpAction, ETriggerEvent::Started, this, &AHorrorGameCharacter::pickUp);
+
+
+
 	}
 	else
 	{
@@ -183,7 +190,7 @@ void AHorrorGameCharacter::Move(const FInputActionValue& Value)
 
 		// get forward vector
 		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-	
+
 		// get right vector 
 		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
@@ -220,27 +227,63 @@ void AHorrorGameCharacter::interact(const FInputActionValue& ignoredValue)
 	TSubclassOf<IInteractableInterface> interfaceClass;
 	GetOverlappingActors(overlappingActors);
 
-
-
 	for (AActor* overlappingActor : overlappingActors) {
 		IInteractableInterface* interactableActor = Cast<IInteractableInterface>(overlappingActor);
 		if (!interactableActor) continue;
-		//if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("sucessfully interacted")));
-		//if (!GetController()->LineOfSightTo(overlappingActor)) continue;
 
 		FHitResult hitResult;
-		FVector startLoc = GetActorLocation();
+		FVector startLoc = CameraBoom->GetComponentLocation();
 		FVector endLoc = startLoc + GetControlRotation().Vector() * 5000.0f;
 		FCollisionQueryParams params;
 		params.AddIgnoredActor(GetController()->GetPawn());
 		bool bHit = GetWorld()->LineTraceSingleByChannel(hitResult, startLoc, endLoc, ECC_Visibility, params);
 		if (!bHit) return;
 
-		
-		if (IInteractableInterface* hitInteractableActor = Cast<IInteractableInterface>(hitResult.GetActor())) {
+
+
+
+		//if (IInteractableInterface* hitInteractableActor = Cast<IInteractableInterface>(hitResult.GetActor())) {
+		if (hitResult.GetActor() == overlappingActor) {
 			IInteractableInterface::Execute_interact(overlappingActor, this);
 		}
 
-		
+
 	}
 }
+
+void AHorrorGameCharacter::pickUp(const FInputActionValue& value)
+{
+	// only closet rn but will just interact with any subclass of InteractableInterface
+	TArray<AActor*> overlappingActors;
+
+	TSubclassOf<IItemInterface> interfaceClass;
+	GetOverlappingActors(overlappingActors);
+
+
+	for (AActor* overlappingActor : overlappingActors) {
+		if (!overlappingActor->Implements<UItemInterface>()) continue;
+
+		FHitResult hitResult;
+		FVector startLoc = CameraBoom->GetComponentLocation();
+		FVector endLoc = startLoc + GetControlRotation().Vector() * 5000.0f;
+		FCollisionQueryParams params;
+		params.AddIgnoredActor(GetController()->GetPawn());
+		bool bHit = GetWorld()->LineTraceSingleByChannel(hitResult, startLoc, endLoc, ECC_Visibility, params);
+		if (!bHit) return;
+		//DrawDebugLine(
+		//	GetWorld(),
+		//	startLoc,
+		//	endLoc,
+		//	FColor::Red,
+		//	false,
+		//	1.0f,
+		//	0,
+		//	1.0f
+		//);
+
+		//if (!overlappingActor->Implements<UItemInterface>()) continue;
+		if (hitResult.GetActor() != overlappingActor) continue; 
+		addItemToInventoryHelper(IItemInterface::Execute_pickUp(overlappingActor));
+	}
+}
+
