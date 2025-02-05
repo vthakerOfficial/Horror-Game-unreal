@@ -98,7 +98,8 @@ protected:
 	FGenericTeamId teamId;
 
 	// User Input funcs
-
+	UFUNCTION(BlueprintPure)
+	bool isDead() const;
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 

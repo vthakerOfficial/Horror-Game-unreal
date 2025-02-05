@@ -15,6 +15,7 @@
 #include "InteractableInterface.h"
 #include "Kismet/GameplayStatics.h"
 #include "ItemInterface.h"
+#include "Blueprint/WidgetLayoutLibrary.h"
 #include <AIController.h>
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -24,10 +25,11 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 float AHorrorGameCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	//if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("CPP")));
 	float damageTaken = DamageAmount > health ? 0 : DamageAmount;
 	health -= damageTaken;
 	if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, FString::Printf(TEXT("Player Health is %f"), health));
+	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	return damageTaken;
 }
 
@@ -114,6 +116,8 @@ bool AHorrorGameCharacter::takeKey(int32 keyID)
 }
 
 
+
+
 void AHorrorGameCharacter::shakeCamera_Implementation(float duration)
 {
 	//empty
@@ -177,6 +181,11 @@ void AHorrorGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	}
 }
 
+bool AHorrorGameCharacter::isDead() const
+{
+	return health == 0;
+}
+
 void AHorrorGameCharacter::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
@@ -238,7 +247,6 @@ void AHorrorGameCharacter::interact(const FInputActionValue& ignoredValue)
 		params.AddIgnoredActor(GetController()->GetPawn());
 		bool bHit = GetWorld()->LineTraceSingleByChannel(hitResult, startLoc, endLoc, ECC_Visibility, params);
 		if (!bHit) return;
-
 
 
 
