@@ -1,289 +1,289 @@
 [
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTService_UpdatePlayerLocation.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTService_UpdatePlayerLocation.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTService_UpdatePlayerLocation.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTService_UpdatePlayerLocation.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_AttackPlayer.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_AttackPlayer.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_AttackPlayer.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_AttackPlayer.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_FindNewWanderLocation.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_FindNewWanderLocation.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_FindNewWanderLocation.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_FindNewWanderLocation.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_MoveToClosestLocation.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_MoveToClosestLocation.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\BTTask_MoveToClosestLocation.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\BTTask_MoveToClosestLocation.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Closet.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Closet.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Closet.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Closet.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Door.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Door.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Door.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Door.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\EnemyAICharacter.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\EnemyAICharacter.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\EnemyAICharacter.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\EnemyAICharacter.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\EnemyAIController.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\EnemyAIController.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\EnemyAIController.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\EnemyAIController.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGame.Build.cs",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGame.Build.cs",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGame.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGame.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGame.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGame.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGameCharacter.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGameCharacter.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGameCharacter.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGameCharacter.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGameGameMode.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGameGameMode.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\HorrorGameGameMode.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\HorrorGameGameMode.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\InteractableInterface.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\InteractableInterface.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\InteractableInterface.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\InteractableInterface.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\ItemDropped.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\ItemDropped.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\ItemDropped.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\ItemDropped.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\ItemInterface.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\ItemInterface.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\ItemInterface.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\ItemInterface.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Keypad.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Keypad.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Keypad.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Keypad.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Keypad_Note.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Keypad_Note.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\Keypad_Note.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\Keypad_Note.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\LevelOne.cpp",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\LevelOne.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\LevelOne.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\LevelOne.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\Source\\HorrorGame\\StructItemInfo.h",
+		"file": "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\Source\\HorrorGame\\StructItemInfo.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
+			"@C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default\\HorrorGame.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	}

@@ -6,7 +6,9 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_HorrorGame.json"
+            "compileCommands": [
+                "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_HorrorGame.json"
+            ]
         },
         {
             "name": "Win32",
@@ -14,7 +16,9 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\NoobChild\\Desktop\\Unreal Projects\\Horror-Game\\.vscode\\compileCommands_Default.json"
+            "compileCommands": [
+                "C:\\Users\\NoobChild\\Desktop\\Dev Game\\Horror-Game\\.vscode\\compileCommands_Default.json"
+            ]
         }
     ],
     "version": 4
