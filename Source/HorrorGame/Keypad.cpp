@@ -3,6 +3,7 @@
 
 #include "Keypad.h"
 
+
 // Sets default values
 AKeypad::AKeypad()
 {
@@ -27,16 +28,47 @@ void AKeypad::Tick(float DeltaTime)
 void AKeypad::createNewPin(int32 numDigits)
 {
 	if (numDigits < 1) {
-		passcode = -1; 
+		pin = -1; 
 		UE_LOG(LogTemp, Display, TEXT("---ERRORFIXNOW createNewPin (cppkeypad class), is being called with a value less than 1-------------"));
 		return;
 	}
-	passcode = FMath::RandRange(0, (int(FMath::Pow(10.0f, numDigits)))-1 );
-	if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("passcode: %d"), passcode));
+	pin = 1234;	// delete this line
+	//pin = FMath::RandRange(0, (int(FMath::Pow(10.0f, numDigits)))-1 );
 }
 
-bool AKeypad::tryPin(int32 guess)
+TArray<int> AKeypad::getPinAsArray() const
 {
-	return guess == passcode;
+	TArray<int32> result;
+	if (pin < 0) return result;
+	
+	int32 t_Pin = pin;
+	while (t_Pin > 0) {
+		int32 item = t_Pin % 10;
+		result.Insert(item, 0);
+		t_Pin /= 10;
+	}
+
+	return result;
+}
+
+int32 AKeypad::getPin() const
+{
+	return pin;
+}
+
+void AKeypad::setIdentity(int32 newIdentity)
+{
+	identity = newIdentity;
+}
+
+int32 AKeypad::getIdentity() const
+{
+	return identity;
+}
+
+
+bool AKeypad::tryPin(int32 guess) const
+{
+	return guess == pin;
 }
 

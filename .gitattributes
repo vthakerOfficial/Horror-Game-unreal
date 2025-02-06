@@ -1,4 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.uasset filter=lfs diff=lfs merge=lfs -text
-*.umap filter=lfs diff=lfs merge=lfs -text
+Content/Assets/ASC_Teuthisan/Characters/Teuthisan/Rig/SKM_Teuthisan_rig_v001.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MapsBundle/TreeHouse/Levels/Demo_Auto4.umap filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MapsBundle/TreeHouse/Meshes/SM_1.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Black_And_White_Tiles_tcpobciq/T_Black_And_White_Tiles_tcpobciq_8K_D.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Black_And_White_Tiles_tcpobciq/T_Black_And_White_Tiles_tcpobciq_8K_N.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Concrete_Pavement_xeohcaws/T_Concrete_Pavement_xeohcaws_8K_D.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Damaged_Concrete_Floor_xeohdaj/T_Damaged_Concrete_Floor_xeohdaj_8K_D.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Worn_Wooden_Planks_whnfbg3/T_WornWoodenPlanks_whnfbg3_8K_ORDp.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Worn_Wooden_Planks_whnfbg3/T_Worn_Wooden_Planks_whnfbg3_8K_D.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Assets/MegascansStuff/Megascans/Surfaces/Worn_Wooden_Planks_whnfbg3/T_Worn_Wooden_Planks_whnfbg3_8K_N.uasset filter=lfs diff=lfs merge=lfs -text
